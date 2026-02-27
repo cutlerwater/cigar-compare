@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CigarCompare — Luxury Price Comparison</title>
+  <link rel="stylesheet" href="cigarcompare.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-mark">CC</div>
+      <div class="brand-text">
+        <div class="brand-name">CigarCompare</div>
+        <div class="brand-tag">US Retailer Price Comparison • 21+ Only</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="nav-link is-active">Search</a>
+      <a href="#" class="nav-link">Top Deals</a>
+      <a href="#" class="nav-link">Retailers</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Find the best price for your next smoke.</h1>
+        <p class="subhead">
+          Compare singles, 5-packs, and boxes across US retailers — ranked by true value per stick.
+        </p>
+
+        <div class="search-panel">
+          <div class="search-row">
+            <div class="field">
+              <label for="q">Search</label>
+              <input id="q" type="text" placeholder="e.g., Padron 1964, Oliva V, Liga Privada..." />
+            </div>
+            <button class="btn btn-primary">Search</button>
+          </div>
+
+          <div class="filter-row">
+            <div class="field">
+              <label>Pack Type</label>
+              <select>
+                <option value="box">Box</option>
+                <option value="five_pack">5 Pack</option>
+                <option value="single">Single</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Strength</label>
+              <select>
+                <option>Any</option>
+                <option>Mild</option>
+                <option>Medium</option>
+                <option>Full</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Wrapper</label>
+              <select>
+                <option>Any</option>
+                <option>Maduro</option>
+                <option>Connecticut</option>
+                <option>Habano</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Sort</label>
+              <select>
+                <option>Best value (per stick)</option>
+                <option>Lowest total price</option>
+                <option>Most retailers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="micro">
+            Tip: Compare “value per stick” to normalize singles vs 5-packs vs boxes.
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <div class="stat-card">
+          <div class="stat">
+            <div class="stat-label">Retailers tracked</div>
+            <div class="stat-value">5</div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat">
+            <div class="stat-label">Cigars in catalog</div>
+            <div class="stat-value">312</div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat">
+            <div class="stat-label">Last refresh</div>
+            <div class="stat-value">2h ago</div>
+          </div>
+          <div class="glow"></div>
+        </div>
+
+        <div class="note-card">
+          <div class="note-title">Today’s Highlight</div>
+          <div class="note-text">
+            “Best Box Value” considers price per stick and in-stock offers.
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <h2>Sample results</h2>
+      <p class="section-sub">Luxury layout ready to wire to your backend.</p>
+    </div>
+
+    <div class="grid">
+      <article class="cigar-card">
+        <div class="cigar-meta">
+          <div class="badge">Box • Best value</div>
+          <h3><a href="cigar.html">Padron 1964 Anniversary Torpedo</a></h3>
+          <p>Nicaragua • 6 × 52 • Maduro • Full</p>
+        </div>
+
+        <div class="price-block">
+          <div class="price-top">
+            <div class="price">$12.40</div>
+            <div class="price-unit">per stick</div>
+          </div>
+          <div class="price-sub">Best box: $248.00 (20 ct)</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-ghost" href="cigar.html">View offers</a>
+          <button class="btn btn-primary">Track price</button>
+        </div>
+      </article>
+
+      <article class="cigar-card">
+        <div class="cigar-meta">
+          <div class="badge">5-Pack</div>
+          <h3><a href="cigar.html">Oliva Serie V Melanio Robusto</a></h3>
+          <p>Nicaragua • 5 × 52 • Habano • Medium–Full</p>
+        </div>
+
+        <div class="price-block">
+          <div class="price-top">
+            <div class="price">$11.10</div>
+            <div class="price-unit">per stick</div>
+          </div>
+          <div class="price-sub">Best 5-pack: $55.50</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-ghost" href="cigar.html">View offers</a>
+          <button class="btn btn-primary">Track price</button>
+        </div>
+      </article>
+
+      <article class="cigar-card">
+        <div class="cigar-meta">
+          <div class="badge">Single</div>
+          <h3><a href="cigar.html">Liga Privada No. 9 Toro</a></h3>
+          <p>USA • 6 × 52 • Maduro • Full</p>
+        </div>
+
+        <div class="price-block">
+          <div class="price-top">
+            <div class="price">$15.95</div>
+            <div class="price-unit">per stick</div>
+          </div>
+          <div class="price-sub">Best single: $15.95</div>
+        </div>
+
+        <div class="actions">
+          <a class="btn btn-ghost" href="cigar.html">View offers</a>
+          <button class="btn btn-primary">Track price</button>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand">CigarCompare</div>
+      <div class="footer-note">21+ only. Prices change quickly. Always verify at retailer checkout.</div>
+    </div>
+    <div class="footer-right">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

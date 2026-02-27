@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Padron 1964 Torpedo — Compare Prices | CigarCompare</title>
+  <link rel="stylesheet" href="cigarcompare.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-mark">CC</div>
+      <div class="brand-text">
+        <div class="brand-name">CigarCompare</div>
+        <div class="brand-tag">Compare US prices • Singles • 5-packs • Boxes</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Search</a>
+      <a href="#" class="nav-link">Top Deals</a>
+      <a href="#" class="nav-link">Retailers</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <div class="detail-head">
+    <div>
+      <div class="crumbs">
+        <a href="index.html">Search</a> <span>›</span>
+        <a href="#">Padron</a> <span>›</span>
+        <span>1964 Anniversary Torpedo</span>
+      </div>
+      <h1 class="detail-title">Padron 1964 Anniversary Series Torpedo</h1>
+      <p class="detail-sub">
+        Nicaragua • 6 × 52 • Maduro • Full • Handmade
+      </p>
+      <div class="pills">
+        <span class="pill">Maduro wrapper</span>
+        <span class="pill">Full strength</span>
+        <span class="pill">6 × 52</span>
+      </div>
+    </div>
+
+    <aside class="detail-summary">
+      <div class="summary-card">
+        <div class="summary-kicker">Best value (current tab)</div>
+
+        <!-- JS updates these -->
+        <span id="bestPerStick">$12.40</span>
+        <div id="bestSub">From $248.00 • 20 ct</div>
+        <div id="bestUpdated">Updated 2 hours ago</div>
+
+        <button class="btn btn-primary btn-full">Track price</button>
+        <div class="micro" id="bestUpdated">Updated 2 hours ago</div>
+
+        <div class="glow"></div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Tabs (JS uses data-pack) -->
+  <section class="tabs">
+    <button class="tab is-active" data-pack="box">Box</button>
+    <button class="tab" data-pack="five_pack">5-Pack</button>
+    <button class="tab" data-pack="single">Single</button>
+  </section>
+
+  <section class="card section-tight">
+    <div class="card-head">
+      <h2>
+        <span id="offerHeading">Box offers</span>
+        <span class="muted" id="unitCountLabel">(20 ct)</span>
+      </h2>
+
+      <div class="card-tools">
+        <label class="switch">
+          <input id="inStockOnly" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+        <span class="tool-text">In stock only</span>
+
+        <div class="select-inline">
+          <span class="tool-text">Sort</span>
+          <select id="sortMode">
+            <option value="value">Best value (per stick)</option>
+            <option value="total">Lowest total price</option>
+            <option value="recent">Most recent update</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="lux-table">
+        <thead>
+          <tr>
+            <th>Retailer</th>
+            <th>Total</th>
+            <th>Per stick</th>
+            <th>Status</th>
+            <th>Updated</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <!-- JS renders rows here -->
+        <tbody id="offersBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="grid-2 section">
+    <div class="card">
+      <div class="card-head">
+        <h2>Specs</h2>
+      </div>
+      <dl class="specs">
+        <div><dt>Brand</dt><dd>Padron</dd></div>
+        <div><dt>Line</dt><dd>1964 Anniversary</dd></div>
+        <div><dt>Vitola</dt><dd>Torpedo</dd></div>
+        <div><dt>Length</dt><dd>6"</dd></div>
+        <div><dt>Ring Gauge</dt><dd>52</dd></div>
+        <div><dt>Wrapper</dt><dd>Maduro</dd></div>
+        <div><dt>Strength</dt><dd>Full</dd></div>
+      </dl>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Value notes</h2>
+      </div>
+      <p class="muted">
+        “Best value” is based on price per stick for the selected pack type.
+        Shipping/taxes can change the final checkout price.
+      </p>
+
+      <div class="callout">
+        <div class="callout-title">Pro tip</div>
+        <div class="callout-text">
+          For hard-to-find cigars, the “5-pack” tab is often where the best value shows up.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand">CigarCompare</div>
+      <div class="footer-note">21+ only. Prices change quickly. Verify at retailer checkout.</div>
+    </div>
+    <div class="footer-right">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
